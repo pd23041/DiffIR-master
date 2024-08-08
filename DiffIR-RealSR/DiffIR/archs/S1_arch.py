@@ -436,7 +436,7 @@ class MambaLayer(nn.Module):
         return out
     
 class CPEN(nn.Module):
-    def __init__(self, n_feats=64, n_encoder_res=6):
+    def __init__(self, n_feats=64, n_encoder_res=6, scale=4):
         super(CPEN, self).__init__()
         self.E1 = nn.Sequential(
             nn.Conv2d(112, n_feats, kernel_size=3, padding=1),
