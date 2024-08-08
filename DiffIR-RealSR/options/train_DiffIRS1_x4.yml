@@ -69,14 +69,14 @@ datasets:
     dataset_enlarge_ratio: 1
     prefetch_mode: ~
 
-  # Uncomment these for validation
-  val_1:
-    name: NTIRE2020-Track1
-    type: PairedImageDataset
-    dataroot_gt: /mnt/bn/xiabinpaint/dataset/NTIRE2020-Track1/track1-valid-gt
-    dataroot_lq: /mnt/bn/xiabinpaint/dataset/NTIRE2020-Track1/track1-valid-input
-    io_backend:
-      type: disk
+  # # Uncomment these for validation
+  # val_1:
+  #   name: NTIRE2020-Track1
+  #   type: PairedImageDataset
+  #   dataroot_gt: /mnt/bn/xiabinpaint/dataset/NTIRE2020-Track1/track1-valid-gt
+  #   dataroot_lq: /mnt/bn/xiabinpaint/dataset/NTIRE2020-Track1/track1-valid-input
+  #   io_backend:
+  #     type: disk
 
 # network structures
 network_g:
@@ -128,18 +128,18 @@ train:
     loss_weight: 1.0
     reduction: mean
 
-# Uncomment these for validation
-# validation settings
-val:
-  window_size: 8
-  val_freq: !!float 5e3
-  save_img: False
+# # Uncomment these for validation
+# # validation settings
+# val:
+#   window_size: 8
+#   val_freq: !!float 5e3
+#   save_img: False
 
-  metrics:
-    psnr: # metric name
-      type: calculate_psnr
-      crop_border: 0
-      test_y_channel: true
+#   metrics:
+#     psnr: # metric name
+#       type: calculate_psnr
+#       crop_border: 0
+#       test_y_channel: true
 
 # logging settings
 logger:
