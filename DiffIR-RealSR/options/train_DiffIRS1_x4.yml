@@ -35,8 +35,8 @@ datasets:
   train:
     name: DF2K+OST
     type: RealESRGANDataset
-    dataroot_gt: /mnt/bn/xiabinpaint/dataset
-    meta_info: datasets/meta_info/meta_info_DF2Kmultiscale+OST_sub.txt
+    dataroot_gt: /kaggle/working/DiffIR-master/DiffIR-RealSR/datasets
+    meta_info: datasets/meta_info/meta_info_DF2Kmultiscale.txt
     io_backend:
       type: disk
 
